@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Седона - городок в Аризоне</title>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="width-wrapper">
+            <header>
+                <nav class="main-nav">
+                    <a href="index.html" class="main-nav__logo-link">
+                        <svg class="main-nav__logo logo" width="138" height="70" aria-label="City of Sedona logo">
+                            <use xlink:href="sprite.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="main-nav__menu">
+                        <li class="main-nav__menu-item">
+                            <a class="main-nav__menu-link" href="#">Информация</a>
+                        </li>
+                        <li class="main-nav__menu-item">
+                            <a class="main-nav__menu-link" href="#">Фото и видео</a>
+                        </li>
+                        <li class="main-nav__menu-item">
+                            <a class="main-nav__menu-link" href="#">Карта штата</a>
+                        </li>
+                        <li class="main-nav__menu-item">
+                            <a class="main-nav__menu-link" href="#">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section class="filters">
+                    <h2 class="visuallyhidden">Фильтры</h2>
+                    <form class="filters-wrapper" action="https://echo.htmlacademy.ru/courses" method="get">
+                        <fieldset class="filters__group">
+                            <legend class="filters__legend">Инфраструктура:</legend>
+                            <p class="filters-item">
+                                <input class="filters-item__input visuallyhidden" id="pool-id" type="checkbox" name="pool" checked>
+                                <label class="filters-item__label" for="pool-id">Бассейн</label>
+                            </p>
+                            <p class="filters-item">
+                                <input class="filters-item__input visuallyhidden" id="parking-id" type="checkbox" name="parking">
+                                <label class="filters-item__label" for="parking-id">Парковка</label>
+                            </p>
+                            <p class="filters-item">
+                                <input class="filters-item__input visuallyhidden" id="wifi-id" type="checkbox" name="wifi">
+                                <label class="filters-item__label" for="wifi-id">Wi-Fi</label>
+                            </p>
+                        </fieldset>
+                        <fieldset class="filters__group">
+                            <legend class="filters__legend">Тип жилья:</legend>
+                            <p class="filters-item">
+                                <input class="filters-item__input visuallyhidden" id="hotel-id" type="checkbox" name="hotel" checked>
+                                <label class="filters-item__label" for="hotel-id">Гостиница</label>
+                            </p>
+                            <p class="filters-item">
+                                <input class="filters-item__input visuallyhidden" id="motel-id" type="checkbox" name="motel" checked>
+                                <label class="filters-item__label" for="motel-id">Мотель</label>
+                            </p>
+                            <p class="filters-item">
+                                <input class="filters-item__input visuallyhidden" id="apartments-id" type="checkbox" name="apartments" checked>
+                                <label class="filters-item__label" for="apartments-id">Апартаменты</label>
+                            </p>
+                        </fieldset>
+                        <fieldset class="filters__price">
+                            <legend class="filters__legend">Стоимость в сутки (р):</legend>
+                            <p>
+                                <span>От<output name="min-price">0</output></span>
+                                <span>До<output name="min-price">3000</output></span>
+                            </p>
+                            <div class="price-controls">
+                                <div class="price-controls__scale">
+                                    <div class="price-controls__bar"></div>
+                                </div>
+                                <button class="price-controls__toggle toggle-min" type="button" aria-label="Кнопка ползунка регулирующая минимальную цену">
+                                    <span class="visuallyhidden">Цена от</span>
+                                </button>
+                                <button class="price-controls__toggle toggle-max" type="button" aria-label="Кнопка ползунка регулирующая максимальную цену">
+                                    <span class="visuallyhidden">Цена до</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                        <button class="filters__button" type="submit">Показать</button>
+                    </form>
+                </section>
+                <section class="hotels-sorting">
+
+                </section>
+                <section class="hotels">
+                    <ul>
+                        
+                    </ul>
+
+                </section>
+            </main>
+            <footer class="main-footer">
+                <p class="footer-contacts">
+                    <span class="footer-contacts__text">#visitsedona</span>
+                    <span class="footer-contacts__tel">тел:
+                        <a href="tel:+74956660166">+7(495) 666-01-66</a>
+                    </span>
+                </p>
+                <ul class="footer-socials">
+                    <li class="socials-item">
+                        <a class="socials-item__link" href="#">
+                            <span class="visuallyhidden">Наша страница в Твиттер</span>
+                            <svg class="socials-item__svg" width="17" height="15">
+                                <use xlink:href="sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-item__link" href="#">
+                            <span class="visuallyhidden">Наша страница в Фейсбук</span>
+                            <svg class="socials-item__svg" width="12" height="22">
+                                <use xlink:href="sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-item__link" href="#">
+                            <span class="visuallyhidden">Наша страница в Ютуб</span>
+                            <svg class="socials-item__svg" width="20" height="16">
+                                <use xlink:href="sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-copyright">
+                    <span class="footer-copyright__text">Website by</span>
+                    <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+                        <svg class="footer-copyright__svg" width="114" height="40">
+                            <use xlink:href="sprite.svg#copyright_logo"></use>
+                        </svg>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
