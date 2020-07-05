@@ -88,12 +88,129 @@
                         <button class="filters__button" type="submit">Показать</button>
                     </form>
                 </section>
-                <section class="hotels-sorting">
-
+                <section class="sorting">
+                    <span class="sorting-quantity">Найдено: 3</span>
+                    <h2 class="sorting-heading">Сортировка</h2>
+                    <ul class="sort-list">
+                        <li class="sort-list__item">
+                            <a class="sort-list__link sort-list__link--active" href="#">По цене</a>
+                        </li>
+                        <li class="sort-list__item">
+                            <a class="sort-list__link" href="#">По типу</a>
+                        </li>
+                        <li class="sort-list__item">
+                            <a class="sort-list__link" href="#">По рейтингу</a>
+                        </li>
+                    </ul>
+                    <ul class="range-list">
+                        <li class="range-list__item">
+                            <a class="range-list__link range-list__link--active" href="#">
+                                <span class="visuallyhidden">От меньшего к большему</span>
+                                <svg class="range-list__arrow" width="11" height="10">
+                                    <use xlink:href="sprite.svg#icon-up-dir"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="range-list__item">
+                            <a class="range-list__link" href="#">
+                                <span class="visuallyhidden">От большего к меньшему</span>
+                                <svg class="range-list__arrow range-list__arrow--active" width="11" height="10">
+                                    <use xlink:href="sprite.svg#icon-down-dir"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </section>
                 <section class="hotels">
-                    <ul>
-                        
+                    <h2 class="visuallyhidden">Список отелей</h2>
+                    <ul class="hotels-list">
+                        <li class="hotels-list__item">
+                            <a class="hotels-list__img-link" href="#">
+                                <img class="hotels-list__img" src="" alt="">
+                            </a>
+                            <div class="hotels-list__item-description-container">
+                                <a class="hotels-list__item-name-link" href="#">
+                                    <h3 class="hotels-list__item-name">Amara Resort & Spa</h3>
+                                </a>
+                                <span class="hotels-list__item-description">Гостиница</span>
+                                <span class="hotels-list__item-price">от 4000 р.</span>
+                                <a class="hotels-list__item-link" href="#">Подробнее</a>
+                                <a class="hotels-list__item-button" href="#">Забронировать</a>
+                            </div>
+                            <div class="hotels-list__item-sidebar">
+                                <div class="hotels-list__stars">
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                </div>
+                                <span class="hotels-list__item-rating">Рейтинг: 8,5</span>
+                            </div>
+                        </li>
+                        <li class="hotels-list__item">
+                            <a class="hotels-list__img-link" href="#">
+                                <img class="hotels-list__img" src="" alt="">
+                            </a>
+                            <div class="hotels-list__item-description-container">
+                                <a class="hotels-list__item-name-link" href="#">
+                                    <h3 class="hotels-list__item-name">Desert Quail Inn</h3>
+                                </a>
+                                <span class="hotels-list__item-description">Мотель</span>
+                                <span class="hotels-list__item-price">от 3000 р.</span>
+                                <a class="hotels-list__item-link" href="#">Подробнее</a>
+                                <a class="hotels-list__item-button" href="#">Забронировать</a>
+                            </div>
+                            <div class="hotels-list__item-sidebar">
+                                <div class="hotels-list__stars">
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                </div>
+                                <span class="hotels-list__item-rating">Рейтинг: 8,9</span>
+                            </div>
+                        </li>
+                        <li class="hotels-list__item">
+                            <a class="hotels-list__img-link" href="#">
+                                <img class="hotels-list__img" src="" alt="">
+                            </a>
+                            <div class="hotels-list__item-description-container">
+                                <a class="hotels-list__item-name-link" href="#">
+                                    <h3 class="hotels-list__item-name">Villas at Poco Diablo</h3>
+                                </a>
+                                <span class="hotels-list__item-description">Апартаменты</span>
+                                <span class="hotels-list__item-price">от 2000 р.</span>
+                                <a class="hotels-list__item-link" href="#">Подробнее</a>
+                                <a class="hotels-list__item-button" href="#">Забронировать</a>
+                            </div>
+                            <div class="hotels-list__item-sidebar">
+                                <div class="hotels-list__stars">
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                    <svg class="hotels-list__one-star" width="19" height="17">
+                                        <use xlink:href="sprite.svg#star"></use>
+                                    </svg>
+                                </div>
+                                <span class="hotels-list__item-rating">Рейтинг: 9,2</span>
+                            </div>
+                        </li>
                     </ul>
 
                 </section>
