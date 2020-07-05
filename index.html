@@ -35,6 +35,7 @@
 
             <main>
                 <section class="slogan">
+                    <h1 class="slogan__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
                     <p class="slogan-text">
                         <svg class="slogan-text__item">
                             <use xlink:href="sprite.svg#welcome_text-1" width="188" height="45" aria-label="Welcome"></use>
@@ -43,14 +44,14 @@
                             <use xlink:href="sprite.svg#welcome_text-2" width="265" height="29" aria-label="to the gorgeous"></use>
                         </svg>
                         <svg class="slogan-text__item">
-                            <use xlink:href="sprite.svg#welcome_text-3" width="456" height="213" aria-label="Sedona - Because the Grand Canyon sucks!"></use>
+                            <h2 class="visuallyhidden">Sedona <br> "Because the Grand Canyon sucks!"</h2>
+                            <use xlink:href="sprite.svg#welcome_text-3" width="456" height="213"></use>
                         </svg>
                     </p>
-                    <h1 class="slogan__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
                 </section>
                 <section class="features">
                     <h2 class="visuallyhidden">Преимущества</h2>
-                    <p class="features-heading">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                    <p class="features-heading">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                     <ul class="features-list">
                         <li class="features-list__item">
                             <h3 class="features-list__title">Настоящий городок</h3>
@@ -86,7 +87,7 @@
                         <li class="features-list__item">
                             <h3 class="features-list__title">Красивая дорога</h3>
                             <span class="features-list__number">№4</span>
-                            <p class="features-list__desc">Ехать в седону из лас-вегаса совсем не скучно!</p>
+                            <p class="features-list__desc">Ехать в Седону из лас-вегаса совсем не скучно!</p>
                         </li>
                         <li class="features-list__item">
                             <h3 class="features-list__title">Мало туристов</h3>
@@ -98,7 +99,7 @@
                 <section class="hotel-search">
                     <h2 class="visuallyhidden">Поиск гостинницы</h2>
                     <span class="hotel-search__heading">Заинтересовались?</span>
-                    <p class="hotel-search__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                    <p class="hotel-search__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     <a class="hotel-search__button" href="#">Поиск гостиницы в Седоне</a>
                     <form class="hotel-search__form" action="https://echo.htmlacademy.ru/courses" method="get">
                         <fieldset class="hotel-search__date-inputs">
@@ -119,13 +120,13 @@
                             <p class="hotel-search__input-item hotel-search__input-item--small">
                                 <label class="hotel-search__label" for="adults">Взрослые:</label>
                                 <button class="hotel-search__minus-button" type="button"><span class="visuallyhidden">-</span></button>
-                                <input class="hotel-search__input" id="adults" type="number" placeholder="2" required>
+                                <input class="hotel-search__input" id="adults" type="number" min="1" placeholder="2" required>
                                 <button class="hotel-search__plus-button" type="button"><span class="visuallyhidden">+</span></button>
                             </p>
                             <p class="hotel-search__input-item hotel-search__input-item--small">
                                 <label class="hotel-search__label" for="children">Дети:</label>
                                 <button class="hotel-search__minus-button" type="button"><span class="visuallyhidden">-</span></button>
-                                <input class="hotel-search__input" id="children" type="number" placeholder="2" required>
+                                <input class="hotel-search__input" id="children" type="number" min="0" placeholder="0" required>
                                 <button class="hotel-search__plus-button" type="button"><span class="visuallyhidden">+</span></button>
                             </p>
                         </fieldset>
