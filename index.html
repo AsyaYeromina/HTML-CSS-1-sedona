@@ -36,7 +36,7 @@
             <main>
                 <section class="slogan">
                     <h1 class="slogan__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-                    <p class="slogan-text">
+                    <div class="slogan-text">
                         <svg class="slogan-text__item">
                             <use xlink:href="sprite.svg#welcome_text-1" width="188" height="45" aria-label="Welcome"></use>
                         </svg>
@@ -44,10 +44,10 @@
                             <use xlink:href="sprite.svg#welcome_text-2" width="265" height="29" aria-label="to the gorgeous"></use>
                         </svg>
                         <svg class="slogan-text__item">
-                            <h2 class="visuallyhidden">Sedona <br> "Because the Grand Canyon sucks!"</h2>
                             <use xlink:href="sprite.svg#welcome_text-3" width="456" height="213"></use>
                         </svg>
-                    </p>
+                        <h2 class="visuallyhidden">Sedona <br> "Because the Grand Canyon sucks!"</h2>
+                    </div>
                 </section>
                 <section class="features">
                     <h2 class="visuallyhidden">Преимущества</h2>
@@ -107,27 +107,49 @@
                             <p class="hotel-search__input-item hotel-search__input-item--big">
                                 <label class="hotel-search__label" for="arrival_date">Дата заезда:</label>
                                 <input class="hotel-search__input" id="arrival_date" type="text" placeholder="24 апреля 2017" required>
-                                <button class="hotel-search__date-button" type="button"><span class="visuallyhidden">Выбрать дату</span></button>
+                                <button class="hotel-search__date-button" type="button">
+                                    <svg class="hotel-search__date-svg" width="21" height="23">
+                                        <use xlink:href="sprite.svg#calendar"></use>
+                                    </svg>
+                                </button>
                             </p>
                             <p class="hotel-search__input-item hotel-search__input-item--big">
                                 <label class="hotel-search__label" for="departure_date">Дата выезда:</label>
                                 <input class="hotel-search__input" id="departure_date" type="text" placeholder="4 июля 2017" required>
-                                <button class="hotel-search__date-button" type="button"><span class="visuallyhidden">Выбрать дату</span></button>
+                                <button class="hotel-search__date-button" type="button">
+                                    <svg class="hotel-search__date-svg" width="21" height="23">
+                                        <use xlink:href="sprite.svg#calendar"></use>
+                                    </svg>
+                                </button>
                             </p>
                         </fieldset>
                         <fieldset class="hotel-search__number-inputs">
                             <legend class="visuallyhidden">Количество гостей:</legend>
                             <p class="hotel-search__input-item hotel-search__input-item--small">
                                 <label class="hotel-search__label" for="adults">Взрослые:</label>
-                                <button class="hotel-search__minus-button" type="button"><span class="visuallyhidden">-</span></button>
+                                <button class="hotel-search__minus-button" type="button">
+                                    <span class="visuallyhidden">-</span>
+                                    <span class="plus-minus-line"></span>
+                                </button>
                                 <input class="hotel-search__input" id="adults" type="number" min="1" placeholder="2" required>
-                                <button class="hotel-search__plus-button" type="button"><span class="visuallyhidden">+</span></button>
+                                <button class="hotel-search__plus-button" type="button">
+                                    <span class="visuallyhidden">+</span>
+                                    <span class="plus-minus-line"></span>
+                                    <span class="plus-minus-line"></span>
+                                </button>
                             </p>
                             <p class="hotel-search__input-item hotel-search__input-item--small">
                                 <label class="hotel-search__label" for="children">Дети:</label>
-                                <button class="hotel-search__minus-button" type="button"><span class="visuallyhidden">-</span></button>
+                                <button class="hotel-search__minus-button" type="button">
+                                    <span class="visuallyhidden">-</span>
+                                    <span class="plus-minus-line"></span>
+                                </button>
                                 <input class="hotel-search__input" id="children" type="number" min="0" placeholder="0" required>
-                                <button class="hotel-search__plus-button" type="button"><span class="visuallyhidden">+</span></button>
+                                <button class="hotel-search__plus-button" type="button">
+                                    <span class="visuallyhidden">+</span>
+                                    <span class="plus-minus-line"></span>
+                                    <span class="plus-minus-line"></span>
+                                </button>
                             </p>
                         </fieldset>
                         <button class="hotel-search__form-button" type="submit">Найти</button>
