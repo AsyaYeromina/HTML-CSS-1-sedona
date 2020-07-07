@@ -111,7 +111,7 @@
                     <div class="hotel-search__form-wrapper">
                         <a class="hotel-search__button" href="#">Поиск гостиницы в Седоне</a>
                         <form class="hotel-search__form" action="https://echo.htmlacademy.ru/courses" method="get">
-                            <fieldset class="hotel-search__date-inputs">
+                            <fieldset class="hotel-search__date-inputs hotel-search__fieldset">
                                 <legend class="visuallyhidden">Даты:</legend>
                                 <p class="hotel-search__input-item hotel-search__input-item--big">
                                     <label class="hotel-search__label" for="arrival_date">Дата заезда:</label>
@@ -132,34 +132,34 @@
                                     </button>
                                 </p>
                             </fieldset>
-                            <fieldset class="hotel-search__number-inputs">
+                            <fieldset class="hotel-search__number-inputs hotel-search__fieldset">
                                 <legend class="visuallyhidden">Количество гостей:</legend>
-                                <p class="hotel-search__input-item hotel-search__input-item--small">
-                                    <label class="hotel-search__label" for="adults">Взрослые:</label>
-                                    <button class="hotel-search__minus-button" type="button">
-                                        <span class="visuallyhidden">-</span>
-                                        <span class="plus-minus-line"></span>
-                                    </button>
-                                    <input class="hotel-search__input" id="adults" type="number" min="1" placeholder="2" required>
-                                    <button class="hotel-search__plus-button" type="button">
-                                        <span class="visuallyhidden">+</span>
-                                        <span class="plus-minus-line"></span>
-                                        <span class="plus-minus-line"></span>
-                                    </button>
-                                </p>
-                                <p class="hotel-search__input-item hotel-search__input-item--small">
-                                    <label class="hotel-search__label" for="children">Дети:</label>
-                                    <button class="hotel-search__minus-button" type="button">
-                                        <span class="visuallyhidden">-</span>
-                                        <span class="plus-minus-line"></span>
-                                    </button>
-                                    <input class="hotel-search__input" id="children" type="number" min="0" placeholder="0" required>
-                                    <button class="hotel-search__plus-button" type="button">
-                                        <span class="visuallyhidden">+</span>
-                                        <span class="plus-minus-line"></span>
-                                        <span class="plus-minus-line"></span>
-                                    </button>
-                                </p>
+                                    <div class="hotel-search__number-items-container">
+                                        <div class="hotel-search__input-item hotel-search__input-item--small">
+                                            <label class="hotel-search__label" for="adults">Взрослые:</label>
+                                            <div class="hotel-search__buttons-input-container">
+                                                <button class="hotel-search__input-button hotel-search__input-button--minus" type="button">
+                                                    <span class="visuallyhidden">-</span>
+                                                </button>
+                                                <input class="hotel-search__input" id="adults" type="number" min="1" placeholder="2" required>
+                                                <button class="hotel-search__input-button hotel-search__input-button--plus" type="button">
+                                                    <span class="visuallyhidden">+</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="hotel-search__input-item hotel-search__input-item--small">
+                                            <label class="hotel-search__label" for="children">Дети:</label>
+                                            <div class="hotel-search__buttons-input-container">
+                                                <button class="hotel-search__input-button hotel-search__input-button--minus" type="button">
+                                                    <span class="visuallyhidden">-</span>
+                                                </button>
+                                                <input class="hotel-search__input" id="children" type="number" min="0" placeholder="0" required>
+                                                <button class="hotel-search__input-button hotel-search__input-button--plus" type="button">
+                                                    <span class="visuallyhidden">+</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                             </fieldset>
                             <button class="hotel-search__form-button" type="submit">Найти</button>
                         </form>

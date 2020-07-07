@@ -325,14 +325,18 @@ html{
 
 .hotel-search__form-wrapper{
     position: relative;
+    margin: 0 auto;
+    max-width: 70%;
+    width: fit-content;
 }
 
 .hotel-search__button{
     display: block;
     margin: 0 auto;
-    padding: 30px 140px 30px 140px;
+    padding: 30px 130px 30px 130px;
     width: fit-content;
-    max-width: 70%;
+    min-width: 568px;
+    max-width: 100%;
     text-decoration: none;
     font-size: 21px;
     font-weight: 700;
@@ -342,6 +346,150 @@ html{
 }
 
 .hotel-search__form{
+    width: 100%;
+    min-width: 568px;
+    padding: 55px;
     position: absolute;
-    
+    z-index: 10;
+    background-color: var(--main-backgound-color);
 }
+
+.hotel-search__fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hotel-search__input-item{
+    margin: 0;
+    position: relative;
+}
+
+.hotel-search__label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.86;
+
+}
+
+.hotel-search__input{
+    height: 38px;
+    border: none;
+    padding: 0;
+    width: 100%;
+    background-color: var(--inputs-background-color);
+}
+
+.hotel-search__input[placeholder]{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    text-transform: uppercase;
+}
+
+.hotel-search__input-item--big{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.hotel-search__date-button{
+    position: absolute;
+    right: 3px;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    background-color: transparent;
+}
+
+.hotel-search__number-inputs{
+    margin-bottom: 50px;
+}
+
+.hotel-search__number-items-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.hotel-search__buttons-input-container{
+    position: relative;
+}
+
+.hotel-search__input-item--small{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hotel-search__input-item--small .hotel-search__label,
+.hotel-search__input-item--small .hotel-search__buttons-input-container{
+    width: 50%;
+}
+
+.hotel-search__input-item--small:nth-child(even) .hotel-search__label{
+    padding-left: 40px;
+}
+
+.hotel-search__input-item--small .hotel-search__input[placeholder]{
+    padding-left: 40px;
+}
+
+.hotel-search__input-button{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding: 19px;
+    background-color: transparent;
+    top: 0;
+    border: none;
+}
+
+.hotel-search__input-button--minus{
+    left: 0;
+}
+
+.hotel-search__input-button::before{
+    position: absolute;
+    content: " ";
+    width: 12px;
+    height: 3px;
+    background-color: var(--searchform-icons-fill-color);
+    right: 5px;
+}
+
+.hotel-search__input-button--plus{
+    transform: translateX(-25%);
+}
+
+.hotel-search__input-button--plus::after{
+    position: absolute;
+    content: " ";
+    width: 12px;
+    height: 3px;
+    background-color: var(--searchform-icons-fill-color);
+    right: 5px;
+    transform: rotate(90deg);
+}
+
+.hotel-search__form-button{
+    width: 100%;
+    border: none;
+    background-color: var(--site-main-color);
+    color: var(--light-text-color);
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.24;
+    padding: 20px;
+}
+/* MAP  */
+/* .map{
+    position: absolute;
+    z-index: -1;
+
+} */
