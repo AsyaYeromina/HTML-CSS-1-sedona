@@ -37,7 +37,7 @@
                 <section class="filters">
                     <h2 class="visuallyhidden">Фильтры</h2>
                     <form class="filters-wrapper" action="https://echo.htmlacademy.ru/courses" method="get">
-                        <fieldset class="filters-group">
+                        <fieldset class="filters-group filters__fieldset">
                             <legend class="filters-group__legend">Инфраструктура:</legend>
                             <p class="filters-group__item">
                                 <input class="filters-group__input visuallyhidden" id="pool-id" type="checkbox" name="pool" checked>
@@ -52,7 +52,7 @@
                                 <label class="filters-group__label" for="wifi-id">Wi-Fi</label>
                             </p>
                         </fieldset>
-                        <fieldset class="filters-group">
+                        <fieldset class="filters-group filters__fieldset">
                             <legend class="filters-group__legend">Тип жилья:</legend>
                             <p class="filters-group__item">
                                 <input class="filters-group__input visuallyhidden" id="hotel-id" type="checkbox" name="hotel" checked>
@@ -67,30 +67,32 @@
                                 <label class="filters-group__label" for="apartments-id">Апартаменты</label>
                             </p>
                         </fieldset>
-                        <fieldset class="filters__price">
-                            <legend class="filters__legend">Стоимость в сутки (р):</legend>
-                            <p>
-                                <span>От <output name="min-price">0</output></span>
-                                <span>До <output name="min-price">3000</output></span>
-                            </p>
-                            <div class="price-controls">
-                                <div class="price-controls__scale">
-                                    <div class="price-controls__bar"></div>
+                        <div class="filters-group__price-button-container"> 
+                            <fieldset class="filters-group__price filters__fieldset">
+                                <legend class="filters-group__legend">Стоимость в сутки (р):</legend>
+                                <p>
+                                    <span>От <output name="min-price">0</output></span>
+                                    <span>До <output name="min-price">3000</output></span>
+                                </p>
+                                <div class="price-controls">
+                                    <div class="price-controls__scale">
+                                        <div class="price-controls__bar"></div>
+                                    </div>
+                                    <button class="price-controls__toggle toggle-min" type="button" aria-label="Кнопка ползунка регулирующая минимальную цену">
+                                        <span class="visuallyhidden">Цена от</span>
+                                    </button>
+                                    <button class="price-controls__toggle toggle-max" type="button" aria-label="Кнопка ползунка регулирующая максимальную цену">
+                                        <span class="visuallyhidden">Цена до</span>
+                                    </button>
                                 </div>
-                                <button class="price-controls__toggle toggle-min" type="button" aria-label="Кнопка ползунка регулирующая минимальную цену">
-                                    <span class="visuallyhidden">Цена от</span>
-                                </button>
-                                <button class="price-controls__toggle toggle-max" type="button" aria-label="Кнопка ползунка регулирующая максимальную цену">
-                                    <span class="visuallyhidden">Цена до</span>
-                                </button>
-                            </div>
-                        </fieldset>
-                        <button class="filters__button" type="submit">Показать</button>
+                            </fieldset>
+                            <button class="filters__button" type="submit">Показать</button>
+                        </div>
                     </form>
                 </section>
                 <section class="sorting">
+                    <h2 class="sorting-heading">Сортировка:</h2>
                     <span class="sorting-quantity">Найдено: 3</span>
-                    <h2 class="sorting-heading">Сортировка</h2>
                     <ul class="sort-list">
                         <li class="sort-list__item">
                             <a class="sort-list__link sort-list__link--active" href="#">По цене</a>
@@ -104,17 +106,15 @@
                     </ul>
                     <ul class="range-list">
                         <li class="range-list__item">
-                            <a class="range-list__link range-list__link--active" href="#">
-                                <span class="visuallyhidden">От меньшего к большему</span>
+                            <a class="range-list__link" href="#" aria-label="От меньшего к большему">
                                 <svg class="range-list__arrow" width="11" height="10">
                                     <use xlink:href="sprite.svg#icon-up-dir"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="range-list__item">
-                            <a class="range-list__link" href="#">
-                                <span class="visuallyhidden">От большего к меньшему</span>
-                                <svg class="range-list__arrow range-list__arrow--active" width="11" height="10">
+                            <a class="range-list__link range-list__link--active" href="#" aria-label="От большего к меньшему">
+                                <svg class="range-list__arrow" width="11" height="10">
                                     <use xlink:href="sprite.svg#icon-down-dir"></use>
                                 </svg>
                             </a>
@@ -224,7 +224,7 @@
                 </p>
                 <ul class="socials-list">
                     <li class="socials-list__item">
-                        <a class="socials-list__item-link" href="#">
+                        <a class="socials-list__item-link main-color-button" href="#">
                             <span class="visuallyhidden">Наша страница в Твиттер</span>
                             <svg class="socials-list__item-svg" width="17" height="15">
                                 <use xlink:href="sprite.svg#twitter"></use>
@@ -232,7 +232,7 @@
                         </a>
                     </li>
                     <li class="socials-list__item">
-                        <a class="socials-list__item-link" href="#">
+                        <a class="socials-list__item-link main-color-button" href="#">
                             <span class="visuallyhidden">Наша страница в Фейсбук</span>
                             <svg class="socials-list__item-svg" width="12" height="22">
                                 <use xlink:href="sprite.svg#fb"></use>
@@ -240,7 +240,7 @@
                         </a>
                     </li>
                     <li class="socials-list__item">
-                        <a class="socials-list__item-link" href="#">
+                        <a class="socials-list__item-link main-color-button" href="#">
                             <span class="visuallyhidden">Наша страница в Ютуб</span>
                             <svg class="socials-list__item-svg" width="20" height="16">
                                 <use xlink:href="sprite.svg#youtube"></use>
