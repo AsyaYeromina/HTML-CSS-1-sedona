@@ -514,6 +514,8 @@ html{
 
 .hotel-search__input-item--small .hotel-search__input[placeholder]{
     text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .hotel-search__input-button{
