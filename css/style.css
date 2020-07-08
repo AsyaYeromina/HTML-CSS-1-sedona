@@ -769,7 +769,14 @@ html{
 .filters-group__item {
     margin: 0;
     margin-bottom: 20px;
-    padding-left: 40px;
+}
+
+.filters-group__checkbox-icon{
+    margin-right: 16px;
+}
+
+.filters-group__checkbox-icon--on{
+    display: none;
 }
 
 .filters-group__label{

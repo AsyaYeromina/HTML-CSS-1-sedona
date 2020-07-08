@@ -41,14 +41,32 @@
                             <legend class="filters-group__legend">Инфраструктура:</legend>
                             <p class="filters-group__item">
                                 <input class="filters-group__input visuallyhidden" id="pool-id" type="checkbox" name="pool" checked>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--off" width="23" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-off></use>
+                                </svg>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--on" width="27" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-on></use>
+                                </svg>
                                 <label class="filters-group__label" for="pool-id">Бассейн</label>
                             </p>
                             <p class="filters-group__item">
                                 <input class="filters-group__input visuallyhidden" id="parking-id" type="checkbox" name="parking">
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--off" width="23" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-off></use>
+                                </svg>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--on" width="27" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-on></use>
+                                </svg>
                                 <label class="filters-group__label" for="parking-id">Парковка</label>
                             </p>
                             <p class="filters-group__item">
                                 <input class="filters-group__input visuallyhidden" id="wifi-id" type="checkbox" name="wifi">
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--off" width="23" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-off></use>
+                                </svg>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--on" width="27" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-on></use>
+                                </svg>
                                 <label class="filters-group__label" for="wifi-id">Wi-Fi</label>
                             </p>
                         </fieldset>
@@ -56,23 +74,41 @@
                             <legend class="filters-group__legend">Тип жилья:</legend>
                             <p class="filters-group__item">
                                 <input class="filters-group__input visuallyhidden" id="hotel-id" type="checkbox" name="hotel" checked>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--off" width="23" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-off></use>
+                                </svg>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--on" width="27" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-on></use>
+                                </svg>
                                 <label class="filters-group__label" for="hotel-id">Гостиница</label>
                             </p>
                             <p class="filters-group__item">
                                 <input class="filters-group__input visuallyhidden" id="motel-id" type="checkbox" name="motel" checked>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--off" width="23" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-off></use>
+                                </svg>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--on" width="27" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-on></use>
+                                </svg>
                                 <label class="filters-group__label" for="motel-id">Мотель</label>
                             </p>
                             <p class="filters-group__item">
                                 <input class="filters-group__input visuallyhidden" id="apartments-id" type="checkbox" name="apartments" checked>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--off" width="23" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-off></use>
+                                </svg>
+                                <svg class="filters-group__checkbox-icon filters-group__checkbox-icon--on" width="27" height="23">
+                                    <use xlink:href=sprite.svg#checkbox-on></use>
+                                </svg>
                                 <label class="filters-group__label" for="apartments-id">Апартаменты</label>
                             </p>
                         </fieldset>
                         <div class="filters-group__price-button-container"> 
                             <fieldset class="filters-group__price filters__fieldset">
                                 <legend class="filters-group__legend">Стоимость в сутки (р):</legend>
-                                <p>
-                                    <span>От <output name="min-price">0</output></span>
-                                    <span>До <output name="min-price">3000</output></span>
+                                <p class="filters-group__min-max">
+                                    <span class="filters-group__min">От <output name="min-price">0</output></span>
+                                    <span class="filters-group__max">До <output name="min-price">3000</output></span>
                                 </p>
                                 <div class="price-controls">
                                     <div class="price-controls__scale">
@@ -134,14 +170,11 @@
                                 </a>
                                 <span class="hotels-list__item-description">Гостиница</span>
                                 <span class="hotels-list__item-price">от 4000 р.</span>
-                                <a class="hotels-list__item-link" href="#">Подробнее</a>
-                                <a class="hotels-list__item-button" href="#">Забронировать</a>
+                                <a class="hotels-list__item-link main-color-button" href="#">Подробнее</a>
+                                <a class="hotels-list__item-button accent-color-button" href="#">Забронировать</a>
                             </div>
                             <div class="hotels-list__item-sidebar">
                                 <div class="hotels-list__stars">
-                                    <svg class="hotels-list__one-star" width="19" height="17">
-                                        <use xlink:href="sprite.svg#star"></use>
-                                    </svg>
                                     <svg class="hotels-list__one-star" width="19" height="17">
                                         <use xlink:href="sprite.svg#star"></use>
                                     </svg>
@@ -168,8 +201,8 @@
                                 </a>
                                 <span class="hotels-list__item-description">Мотель</span>
                                 <span class="hotels-list__item-price">от 3000 р.</span>
-                                <a class="hotels-list__item-link" href="#">Подробнее</a>
-                                <a class="hotels-list__item-button" href="#">Забронировать</a>
+                                <a class="hotels-list__item-link main-color-button" href="#">Подробнее</a>
+                                <a class="hotels-list__item-button accent-color-button" href="#">Забронировать</a>
                             </div>
                             <div class="hotels-list__item-sidebar">
                                 <div class="hotels-list__stars">
@@ -196,8 +229,8 @@
                                 </a>
                                 <span class="hotels-list__item-description">Апартаменты</span>
                                 <span class="hotels-list__item-price">от 2000 р.</span>
-                                <a class="hotels-list__item-link" href="#">Подробнее</a>
-                                <a class="hotels-list__item-button" href="#">Забронировать</a>
+                                <a class="hotels-list__item-link main-color-button" href="#">Подробнее</a>
+                                <a class="hotels-list__item-button accent-color-button" href="#">Забронировать</a>
                             </div>
                             <div class="hotels-list__item-sidebar">
                                 <div class="hotels-list__stars">
