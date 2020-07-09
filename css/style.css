@@ -625,8 +625,17 @@ html{
 
 .map-img{
     z-index: -1;
+    object-fit: cover;
 }
 
+.map iframe{
+    position: absolute;
+    z-index: 0;
+    border: none;
+    width: 100%;
+    height: 594px;
+    width: 1200px;
+}
 
 /* FOOTER  */
 .main-footer{
@@ -735,7 +744,7 @@ html{
 .filters-wrapper{
     display: flex;
     flex-wrap: wrap;
-    padding: 26px 72px 8px 72px;
+    padding: 26px 72px 10px 72px;
 }
 
 
@@ -775,34 +784,49 @@ html{
     font-size: 16px;
     line-height: 1.31;
     font-weight: 700;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
-.filters-group__item {
+.filters-group__item{
+    position: relative;
     margin: 0;
     margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: 0;
 }
 
-.filters-group__checkbox-icon{
+.filters-group__input + .filters-group__label::before{
     position: absolute;
-    display: block;
+    content: " ";
+    width: 25px;
+    height: 23px;
+    left: 0;
+    top: 0;
+    background-image: url(../img/checkbox-off.svg);
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 
-.filters-group__checkbox-icon--on{
-    display: none;
+.filters-group__input:disabled + .filters-group__label::before{
+    opacity: 0.3;
 }
 
-.filters-group__input:checked + .filters-group__checkbox-icon--off{
-    display: none;
+.filters-group__input:checked + .filters-group__label::before{
+    position: absolute;
+    content: " ";
+    width: 25px;
+    height: 23px;
+    left: 0;
+    top: 0;
+    background-image: url(../img/checkbox-on.svg);
+    background-size: 27px 23px;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 
-.filters-group__input:checked ~ .filters-group__checkbox-icon--on{
-    display: block;
+.filters-group__input:checked:disabled + .filters-group__label::before{
+    opacity: 0.3;
 }
+
 
 .filters-group__label{
     font-size: 14px;
@@ -1112,6 +1136,32 @@ html{
     font-size: 14px;
     line-height: 1.5;
     justify-self: baseline;
+}
+
+.hotels-list__stars{
+    background-image: url(../img/star.svg);
+    background-repeat: repeat-x;
+    height: 17px;
+}
+
+.hotels-list__stars-5{
+    width: 94px;
+}
+
+.hotels-list__stars-4{
+    width: 76px;
+}
+
+.hotels-list__stars-3{
+    width: 58px;
+}
+
+.hotels-list__stars-2{
+    width: 38px;
+}
+
+.hotels-list__stars-1{
+    width: 18px;
 }
 
 .hotels-list__item-rating {
