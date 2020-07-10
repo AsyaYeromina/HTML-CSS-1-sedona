@@ -806,6 +806,12 @@ html{
     opacity: 1;
 }
 
+.filters-group__input:focus + .filters-group__label::before{
+    outline-color: var(--searchform-icons-fill-color);
+    outline-style: auto;
+    outline-width: 2px;
+}
+
 .filters-group__input:disabled + .filters-group__label::before{
     opacity: 0.3;
 }
@@ -1140,24 +1146,24 @@ html{
 
 .hotels-list__stars{
     background-image: url(../img/star.svg);
-    background-repeat: repeat-x;
+    background-repeat: space repeat;
     height: 17px;
 }
 
 .hotels-list__stars-5{
-    width: 94px;
+    width: 104px;
 }
 
 .hotels-list__stars-4{
-    width: 76px;
+    width: 89px;
 }
 
 .hotels-list__stars-3{
-    width: 58px;
+    width: 65px;
 }
 
 .hotels-list__stars-2{
-    width: 38px;
+    width: 40px;
 }
 
 .hotels-list__stars-1{
