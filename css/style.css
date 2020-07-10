@@ -401,6 +401,8 @@ html{
     max-width: 100%;
     text-decoration: none;
     font-size: 21px;
+    text-transform: uppercase;
+    border: none;
     font-weight: 700;
     text-align: center;
     color: var(--light-text-color);
