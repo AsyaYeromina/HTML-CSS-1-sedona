@@ -117,12 +117,15 @@
                     </ul>
                 </section>
                 <section class="hotel-search">
-                    <h2 class="visuallyhidden">Поиск гостинницы</h2>
-                    <span class="hotel-search__heading">Заинтересовались?</span>
-                    <p class="hotel-search__desc">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
+                    <div class="hotel-search__wrapper">
+                        <h2 class="visuallyhidden">Поиск гостинницы</h2>
+                        <span class="hotel-search__heading">Заинтересовались?</span>
+                        <p class="hotel-search__desc">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
+                    </div>
                     <div class="hotel-search__form-wrapper">
                         <button class="hotel-search__button accent-color-button" href="#">Поиск гостиницы в Седоне</button>
-                        <form class="hotel-search__form hotel-search__form--hidden" action="https://echo.htmlacademy.ru/courses" method="get">
+                        <form class="hotel-search__form" action="https://echo.htmlacademy.ru/courses" method="get">
+                            <!-- Adding class "hotel-search__form--hidden" to this form in JS hides the form-->
                             <fieldset class="hotel-search__date-inputs hotel-search__fieldset">
                                 <legend class="visuallyhidden">Даты:</legend>
                                 <p class="hotel-search__input-item hotel-search__input-item--big">
@@ -226,5 +229,6 @@
                 </div>
             </footer>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
