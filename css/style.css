@@ -296,7 +296,7 @@ html {
 .slogan-text {
     margin: 0;
     position: relative;
-    background-image: url(../img/background_photo.jpg);
+    background-image: url(../img/background-photo.jpg);
     background-color: var(--background-main-image-color);
     background-size: 1200px 509px;
     min-height: 509px;
@@ -817,7 +817,7 @@ html {
 }
 
 .filters {
-    background-image: url(../img/background_photo.jpg);
+    background-image: url(../img/background-photo.jpg);
     background-color: var(--background-main-image-color);
     background-position-y: 70%;
     color: var(--light-text-color);
@@ -841,7 +841,7 @@ html {
     top: -20px;
     bottom: 0;
     z-index: -1;
-    background: url(../img/background_photo.jpg);
+    background: url(../img/background-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 70%;
