@@ -10,7 +10,17 @@
         transform: translateY(-100%)
     }
 
-    to {
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
         transform: translateY(0)
     }
 }
@@ -20,11 +30,67 @@
         transform: translateY(0)
     }
 
-    to {
-        transform: translateY(-100%)
+    100% {
+        transform: translateY(-100%);
+        display: none;
     }
 }
 
+
+@keyframes up {
+    0% {
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(-100%);
+        display: none;
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
 
 :root {
     --main-backgound-color: #ffffff;
@@ -451,9 +517,9 @@ html {
 }
 
 .hotel-search__form--hidden {
-    display: none;
     -webkit-animation: up .5s;
-            animation: up .5s
+    animation: up .5s;
+    animation-fill-mode: forwards;
 }
 
 .hotel-search__fieldset {
@@ -480,6 +546,10 @@ html {
     width: 100%;
     background-color: var(--inputs-background-color);
     border-radius: 0
+}
+
+.hotel-search__input--error{
+    animation: shake 0.5s;
 }
 
 .hotel-search__input:hover {
