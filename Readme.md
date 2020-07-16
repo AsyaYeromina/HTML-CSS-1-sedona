@@ -5,7 +5,8 @@
 
 ---
 
-# Проект на GitHub pages  https://asyayeromina.github.io/HTML-CSS-1-sedona/
+# Проект на GitHub pages
+https://asyayeromina.github.io/HTML-CSS-1-sedona/
 
 ---
 
